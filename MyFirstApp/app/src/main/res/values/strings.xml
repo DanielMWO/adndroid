@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyFirstApp</string>
+    <string name="actinon_settings">Settings</string>
+    <string name="edit_message">EnterMessage</string>
+    <string name="button_send">Send</string>
+
+</resources>
