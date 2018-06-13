@@ -31,4 +31,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
+    public void gotoCounter(View view) {
+        Intent intent =  new Intent(this, DisplayCounterActivity.class);
+        startActivity(intent);
+
+    }
 }
