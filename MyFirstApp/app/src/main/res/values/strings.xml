@@ -7,6 +7,8 @@
     <string name="increment">Add</string>
     <string name="decrement">Subtract</string>
     <string name="set_value">Set</string>
+    <string name="reset">Wyzeruj</string>
+    <string name="set_value_to_counter">podaj wartość</string>
 
 
 </resources>
