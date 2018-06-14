@@ -1,9 +1,11 @@
 package com.example.danielpolek.myfirstapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class DisplayCounterActivity extends AppCompatActivity {
@@ -43,6 +45,14 @@ public class DisplayCounterActivity extends AppCompatActivity {
     }
 
     public void setValueCounter(View view) {
+        ///Intent intent = new Intent();
+        EditText editText = (EditText) findViewById(R.id.set_value_counter);
+        String val  = editText.getText().toString();
+        int value = Integer.parseInt(val);
+        ///Log.d("msg", val);
+        counter = value;
+        passValueToCounter(counter);
+
 
     }
 
