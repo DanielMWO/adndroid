@@ -44,15 +44,18 @@ public class DisplayCounterActivity extends AppCompatActivity {
         passValueToCounter(counter);
     }
 
-    public void setValueCounter(View view) {
-        ///Intent intent = new Intent();
+    public void setValueOfCounter(View view) {
+
         EditText editText = (EditText) findViewById(R.id.set_value_counter);
         String val  = editText.getText().toString();
-        int value = Integer.parseInt(val);
-        ///Log.d("msg", val);
-        counter = value;
-        passValueToCounter(counter);
 
+        if (!val.isEmpty()) {
+            int value = Integer.parseInt(val);
+            ///Log.d("msg", val);
+
+            counter = value;
+            passValueToCounter(counter);
+        }
 
     }
 

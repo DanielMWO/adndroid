@@ -55,7 +55,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:onClick="setValueCounter"
+        android:onClick="setValueOfCounter"
         android:text="@string/set_value" />
 
 
