@@ -1,46 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DisplayCounterActivity">
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:orientation="vertical"
+    tools:context="com.example.danielpolek.myfirstapp.DisplayCounterActivity">
 
 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-
-    <Button
+    <TextView
+        android:id="@+id/counter_value"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/increment"
-        android:onClick="addOne"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/decrement"
-        android:onClick="subtractOne"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/reset"
-        android:onClick="resetCounter"/>
-
-    <EditText android:id="@+id/edit_message"
         android:layout_weight="1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/set_value_to_counter"/>
+        android:text="TextView"
+        />
 
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/set_value"
-        android:onClick="setValueCounter"/>
+        android:onClick="addOne"
+        android:text="@string/increment" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="subtractOne"
+        android:text="@string/decrement" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="resetCounter"
+        android:text="@string/reset" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/set_value_to_counter"
+        android:inputType="number"
+        />
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="setValueCounter"
+        android:text="@string/set_value" />
 
 
 
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
